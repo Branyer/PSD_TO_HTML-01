@@ -1,0 +1,96 @@
+.section-02{
+    position: relative;
+    background-color: $color-background--gray;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    max-height: fit-content;
+    min-height: 70vh;
+    .section-02__container {
+        align-items: center;
+        background-image: 
+        url('../images/Coffee-Cup.png'),
+        url('../images/Earphones.png'),
+        url('../images/Pen-holder.png');
+        background-position: bottom right, top right, top left;
+        background-repeat: no-repeat;
+        background-size: 180px;
+        display: flex; 
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+        width: 85%;  
+        
+        .section-02__title {
+            font-family: $font-principal;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 80px; 
+            margin-bottom: 70px;
+            
+        }
+
+        .section-02__features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .section-02__container {
+        background-position: bottom right, center left, top left !important; 
+    }
+}
+
+@media (max-width: 320px) {
+    .section-02__container {
+        background-image: 
+        url('../images/Coffee-Cup.png'),
+        url('../images/Pen-holder.png') !important;
+
+        background-position: bottom right, top left !important; 
+    }
+    
+}
+
+
+.section-02__feature {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin: 0px 20px;
+    .feauter__logo {
+        height: 60px;
+        width: 60px;
+        
+        .feauter__logo__image {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+        }
+    } 
+
+    .feauter__title,
+    .feauter__paragraph {
+        text-align: center;
+    }
+
+    .feauter__title {
+        font-family: $font-principal;
+        margin-bottom: 0;
+    }
+
+    .feauter__paragraph {
+        color: gray;
+        margin-bottom: 200px;
+        margin-top: 5px;
+    }
+}
+
+    

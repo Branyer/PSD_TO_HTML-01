@@ -1,0 +1,49 @@
+.section-01 {
+    display: flex;
+    height: fit-content;
+    min-height: 70vh;
+
+}  
+
+.section-01__container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    flex: 0.4;
+    min-height: 100%;
+    padding: 10%;
+
+    .section-01__title {
+        font-family: $font-principal;
+        font-size: 2rem;
+    }
+
+    .section-01__paragraph {
+        color: gray;
+        font-weight: 500;
+    }
+
+} 
+
+.section-01__twoColorsDesign {
+    background-color: $color-background--gray;
+    flex: 0.6 ;
+    overflow: hidden;
+    width: 100%;
+    .twoColorsDesign__skew {
+        background-color: $color-background--orange;
+        height: 100%;
+        width: 200%;
+        transform: skewX(-50deg) translate(40%);
+        
+    }
+}
+
+@media (max-width: 320px) {
+    .section-01__twoColorsDesign {
+     display: none;
+    }
+    .section-01__container {
+        flex: 1;
+    }
+}

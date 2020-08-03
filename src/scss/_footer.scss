@@ -1,0 +1,127 @@
+.footer {
+    align-items: center;
+    background-color: $color-background--gray;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    min-height: 40vh;
+    overflow: hidden;
+    position: relative;
+
+    .footer__orange {
+        background-color: $color-background--orange;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        top:0;
+        transform: skewX(40deg) translateX(90%);
+        width: 400px;
+        z-index: 100;
+    }  
+
+
+}
+
+.footer__container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.85;
+    justify-content: center;
+    position: relative;
+    z-index: 200;
+
+    .footer__address,
+    .footer__about-us,
+    .footer__support,
+    .footer__get-newsletter
+     {
+        flex-basis: 10vw;
+        flex-shrink: 1;
+        margin:30px 10px;
+        text-align: center;
+    }
+
+    .footer__address,
+    .footer__about-us,
+    .footer__support {
+        flex-grow: 2;
+    }
+ 
+    .footer__get-newsletter {
+        align-items: center;
+        display: flex;
+        flex-basis: 15vw;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+
+        .get-newsletter__form {
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+
+            .footer__input {
+                background-color: #f6f6f6;
+                border: 1px solid #b8b8bf;
+                border-radius: 2px;
+                outline: none;
+                padding: 16px;
+            }
+
+            .footer__submit{
+                background-color: $color-button;
+                background-image: url('../images/send-email-arrow.png');
+                background-size: 23px;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow: 2px 2px 5px black;
+                height: 50px;
+                transition: all 0.2s ease;
+                width: 50px;;
+                &:hover {
+                    background-size: 25px;
+                }
+            }
+        }
+    }
+
+    .footer__icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        width: 60%;
+        
+        .icon {
+            color: grey;
+            text-decoration: none;
+        }
+    }
+
+
+    .footer__address{
+        color: grey;
+        text-align: left;
+    }
+
+    header {
+        font-family: $font-principal;
+        font-size: 1.2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0px;
+    }
+
+    ul li a{
+        color: grey;
+        text-decoration: none;
+    }
+
+}

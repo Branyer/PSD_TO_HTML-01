@@ -1,0 +1,40 @@
+.header {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('../images/image-header.png');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 80vh; 
+
+    .header__title {
+        font-family: $font-principal;
+        font-size: 3.2rem;
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .button__info {
+            font-size: 1rem;
+            font-weight: 800;
+            color: rgb(65, 63, 63);
+            margin-bottom: 30px;
+            &:hover {
+                color: black
+            }
+        }
+    }
+}
+

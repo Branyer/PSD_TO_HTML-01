@@ -1,0 +1,63 @@
+.description {
+    min-height: 70vh;
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .description__orange {
+      background-color: $color-background--orange;
+      height: 100%;
+      position: absolute; 
+      transform: skewX(50deg) translateX(-60%);
+      top: 0;
+      left: 0;
+      width: 60%;
+      z-index: 100;
+    }
+}
+
+.description__container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    min-height: inherit;
+    height: inherit;
+    justify-content: center;
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 500;
+  
+    .description__macbook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50vw;
+        flex-grow: 1;
+        flex-shrink: 2;
+        margin: 50px 0px;
+        .macbook__image {
+            width: 80%;
+        }
+    }
+
+
+    .description__article {
+        flex-basis: 40vw;
+        flex-grow: 2;
+        flex-shrink: 1;
+        padding: 7%;
+        
+        background-color: rgba(255, 255, 255, 0.692);
+        .description__title {
+            font-family: $font-principal;
+            font-size: 2rem;
+        }
+    
+        .description__paragraph {
+            color: gray;
+            font-weight: 500;
+        }
+    
+    }
+}

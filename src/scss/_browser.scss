@@ -1,0 +1,41 @@
+.browser{
+    align-items: center;
+    background-color: $color-background--gray;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-between;
+    min-height: 70vh;
+    width: 100%;
+ 
+    .browser__article{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        .browser__title {
+            font-family: $font-principal;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .browser__paragraph{
+            color: gray;
+            font-weight: 500;
+            text-align: center;
+        }
+
+    }
+
+    .browser__container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+        .browser__image {
+            width: 60%;
+        }
+    }
+}

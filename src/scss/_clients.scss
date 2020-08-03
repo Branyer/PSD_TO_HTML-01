@@ -1,0 +1,76 @@
+.clients {
+    align-items: center;
+    background-image: url('../images/BG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    min-height: 70vh;
+
+    .clients__container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+    
+    
+    .clients__partners {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px 0px;
+        width: 90%;
+    }
+}
+
+
+.client {
+    align-items: center;
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: 50px;
+    .client__image {
+        background-color: #4e4e5e;
+        height: 50px;
+        width: 50px;
+    }
+
+    .client__name {
+        color: white;
+        font-family: $font-principal;
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+
+    .client__charge{
+        color: $color-button;
+        font-family: $font-principal;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .client__paragraph {
+        color: gray;
+        font-weight: 700;
+        padding: none;
+        text-align: center;
+    }
+}
+
+.partner {
+    flex-basis: 5px;
+    flex-shrink: 1;
+    height: 50px;
+    margin-top: 30px;
+} 

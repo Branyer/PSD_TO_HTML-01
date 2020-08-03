@@ -1,0 +1,81 @@
+.try-now{
+    align-items: center;
+    background-color: $color-background--blue;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+    min-height: 60vh;
+
+    .try-now__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .input {
+        background-color: #464c77;
+        border: 1px solid white;
+        border-radius: 1px;
+        color: white;
+        height: 45px;
+        margin: 20px 20px;
+        padding: 10px;
+        outline: none;
+
+        &::placeholder{
+            color: grey;
+        }
+    }
+
+    input[type="submit"]{
+        height: 45px;
+        margin: 20px 20px;
+        margin-top: 2px;
+    }
+
+    .terms {
+        color: gray;
+        font-size: 0.9rem;
+
+        .terms__link {
+            color:inherit;
+        }
+    }
+
+    .form__submit{
+        display: flex;
+        flex-direction: column;
+        
+        .arrow{
+            height: 40px;
+            margin-left: 20px;
+            width: 40px;
+            
+        }
+        
+        .submit__free-trial {
+            color: white;
+            font-size: 0.9rem;
+            margin-left: 30px;
+        }
+    }
+    
+    @media (min-width: 1330px) {
+        .form__submit {
+            transform: translateY(-40px);
+        }
+      }
+
+    .try-now__header {
+        text-align: center;
+        font-family: $font-principal;
+        margin-bottom: 50px;
+        
+        .try-now__title {
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}
