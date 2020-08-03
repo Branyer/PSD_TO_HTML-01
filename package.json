@@ -1,0 +1,32 @@
+{
+  "name": "psd-to-html-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Branyer/PSD_TO_HTML-01.git"
+  },
+  "author": "Branyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Branyer/PSD_TO_HTML-01/issues"
+  },
+  "homepage": "https://github.com/Branyer/PSD_TO_HTML-01#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
